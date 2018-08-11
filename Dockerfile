@@ -44,7 +44,3 @@ COPY ${OPENHMIS_DATABASE_SCRIPT_PATH} /home/jboss/temp/db/
 VOLUME /home/jboss/.OpenMRS/
 
 EXPOSE 8080
-
-# Setup openmrs, optionally load demo data, and start tomcat
-COPY run.sh /run.sh
-ENTRYPOINT ["/run.sh"]
